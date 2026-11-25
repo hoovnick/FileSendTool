@@ -17,6 +17,8 @@
 - [x] Desktop and Start menu shortcuts (point at `distst.exe`)
 - [x] Bundled cloudflared: resolves beside the exe, then `vendor\`, then PATH
 - [x] `package.ps1` builds `dist\` — fst.exe + cloudflared.exe + licences, 79.6 MB
+- [x] Published: https://github.com/hoovnick/FileSendTool (MIT)
+- [x] Release v0.1.0 with a self-contained 23.7 MB zip
 - [x] Verification: see "Verified" below
 
 ## Verified
@@ -42,6 +44,7 @@
 | Bundled cloudflared preferred over PATH | child was `dist\cloudflared.exe`, not system32 |
 | PATH fallback still works | fst.exe alone in a temp dir used the system32 copy |
 | Public link via the bundled binary | landing 200, download SHA-256 match |
+| Release zip downloaded from GitHub | SHA-256 matches, runs from a fresh folder, uses its own bundled cloudflared |
 
 ## Resource cost (measured on this box: i7-6700, 8 logical cores, 64 GB)
 
